@@ -34,8 +34,6 @@ public class main {
 			returnVal.append(count);
 		
 		return returnVal.toString();
-			
-		
 	}
 	
 	public static String convertToFizzBuzzLucky(int count) {
@@ -53,12 +51,12 @@ public class main {
 	}
 	    
 	public static void getCounts(String val) {
-		 if(val.contentEquals(Constants.FIZZ) || val.contentEquals(Constants.BUZZ) || val.contentEquals(Constants.FIZZ_BUZZ) || val.contentEquals(Constants.LUCKY))
+		if(val.contentEquals(Constants.FIZZ) || val.contentEquals(Constants.BUZZ) || val.contentEquals(Constants.FIZZ_BUZZ) || val.contentEquals(Constants.LUCKY))
      		if(fizzBuzzMap.containsKey(val))
      			fizzBuzzMap.put(val, fizzBuzzMap.get(val).intValue() + 1);
      		else 
      			fizzBuzzMap.put(val, 1);
-     	else
+ 		else
      		if(fizzBuzzMap.containsKey(Constants.INTEGER))
      			fizzBuzzMap.put(Constants.INTEGER, fizzBuzzMap.get(Constants.INTEGER).intValue() + 1);
      		else
