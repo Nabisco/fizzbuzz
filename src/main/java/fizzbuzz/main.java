@@ -10,7 +10,15 @@ public class main {
 
 
 	public static void main(String[] args) {
+		int n = 100;
+
+		System.out.println("Count: " + n);
+		System.out.println("\n-----FIZZ BUZZ-----");
+		System.out.println(convertToFizzBuzz(n));
+		System.out.println("\n-----FIZZ BUZZ LUCKY-----");
+		System.out.println(convertToFizzBuzzLucky(n));
 	        
+	    
         for (Map.Entry<String,Integer> entry : fizzBuzzMap.entrySet())  
             System.out.println(entry.getKey() + 
                              ": " + entry.getValue()); 
